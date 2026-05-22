@@ -1,0 +1,28 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Add your custom update steps here
+      # Example: Fetch latest blog posts
+      # - name: Fetch latest blog posts
+      #   uses: gautamkrishnar/blog-post-workflow@v1
+      #   with:
+      #     feed_list: "https://yourblog.com/feed.xml"
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "Abdullah Asif Khan"
+          git config user.email "ab2006kh@gmail.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Update README content"
+          git push
