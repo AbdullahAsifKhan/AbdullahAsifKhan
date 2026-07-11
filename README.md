@@ -1,6 +1,6 @@
 # Hi, I'm Abdullah
 
-I write code, break things, and sometimes fix them. I mostly work on web apps and practice DSA, going full stack when needed, backend when given the choice. I also tinker with different languages, which is how I got into programming in the first place.
+I like to solve problems and break things. I also tinker with different languages, which is how I got into programming in the first place.
 
 <p align="left">
    <a href="https://github.com/AbdullahAsifKhan?tab=followers">
